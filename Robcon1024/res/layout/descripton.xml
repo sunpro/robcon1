@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <ImageView 
+        android:id="@+id/img_description1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/screen2"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:maxHeight="400dp"
+        />
+    <TextView 
+        android:id="@+id/text_description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_description1"
+        android:text="@string/description"
+        android:maxLines="10"
+        android:singleLine="false"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideInset"
+        android:padding="10dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <color name="blue">#ff0000ff</color>
+    <color name="black">#ff000000</color>
+    <color name="lightblue">#FFADD8E6</color><!--亮蓝色 -->
+    <color name="lightskyblue">#FF87CEFA</color><!--亮天蓝色 -->
+</resources>

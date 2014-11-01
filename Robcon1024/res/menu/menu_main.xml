@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item 
+        android:id="@+id/menu_search"
+        android:title="@string/search_title"
+        android:icon="@drawable/searchicon"
+        android:showAsAction="ifRoom"
+        />
+    <item 
+        android:id="@+id/menu_web"
+        android:title="@string/web_title"
+        android:icon="@drawable/web"
+        android:showAsAction="never"
+        />
+</menu>

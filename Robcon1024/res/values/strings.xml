@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Robcon</string>
+	<string name="title_botmenu_1">首页</string>
+	<string name="title_botmenu_2">列表</string>
+	<string name="title_botmenu_3">收藏</string>
+	<string name="description">“亚太大学生机器人大赛”（ABU Robocon）于2002年由“亚洲太平洋地区广播电视联盟”（ABU）倡导，每年举办一届，以选拔国内制作机器人的冠军队参加亚太区桂冠的争夺。该活动的宗旨是致力于培养各国青少年对于开发、研制高科技的兴趣与爱好，提高各参与国的科技水平，为机器人工业的发展发掘培养后备人才。　它需要学生综合应用本科所学的机械制图、数电模电、单片机、传感技术、自动控制、图像处理、计算机编程语言、电机拖动等多门学科的知识。通过机器人平台，可使学生对机电一体化系统有完整的系统认识，增强学生综合应用所学理论知识，理论联系实际的能力，培养学生的创新思维能力和创新能力。</string>
+	<string name="search_title">搜索</string>
+	<string name="web_title">更多</string>
+	<string name="web_link">http://www.cnrobocon.org/</string><!-- 网站网址 -->
+	
+</resources>

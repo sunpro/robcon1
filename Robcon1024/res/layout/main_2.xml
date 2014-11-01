@@ -1,0 +1,13 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="#00ff00">
+    <ListView 
+        android:id="@+id/listView_main2_catalog"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"
+        android:divider="@color/lightskyblue"
+        android:dividerHeight="1dp"
+        ></ListView>
+
+</RelativeLayout>

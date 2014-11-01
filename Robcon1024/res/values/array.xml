@@ -1,0 +1,17 @@
+<resources>
+    <string-array name="title_list_exhibition">
+        <item >第1届 抢攀珠穆朗玛峰</item>
+        <item >第2届 太空征服者</item>
+        <item >第3届 鹊桥相会</item>
+        <item >第4届 登长城，燃圣火</item>
+        <item >第5届 修建双子高塔</item>
+        <item >第6届 华夏之光</item>
+        <item >第7届 印度牛郎</item>
+        <item >第8届 胜利鼓乐</item>
+        <item >第9届 辉煌金塔</item>
+        <item >第10届 荷灯祈福</item>
+        <item >第11届 平安大吉</item>
+        <item >第12届 绿化星球</item>
+        <item >第13届 舐犊情深</item>
+    </string-array>
+</resources>
