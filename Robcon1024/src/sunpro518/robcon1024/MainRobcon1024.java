@@ -8,7 +8,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Parcelable;
@@ -51,8 +50,10 @@ public class MainRobcon1024 extends Activity {
 	private int rowListView = 13;
 	private String[] titleList = new String[rowListView];
 	private int[] imgIdList = new int[rowListView];
-	private List<Map<String,Object>> list = new ArrayList<Map<String,Object>>();
-	//private ImageButton imgbutListLike;
+	private List<Map<String,Object>> list = 
+			new ArrayList<Map<String,Object>>();
+	//用来存放收藏的position；注意要用int 的类integer而不是int；
+	private ArrayList<String> arrayLikePosition = new ArrayList<String> ();
 	
 	//菜单
 	private Uri uri;
@@ -379,7 +380,8 @@ public class MainRobcon1024 extends Activity {
 	            convertView. setTag(holder) ; 
 	        } 
 	        
-	        HashMap < String , Object > appInfo = (HashMap<String, Object>) mList. get ( position ) ; 
+	        HashMap < String , Object > appInfo = 
+	        		(HashMap<String, Object>) mList. get ( position ) ; 
 	        if ( appInfo != null ) { 
 	            String aname = (String)appInfo.get(from[1]); 
 	            int mid = (Integer)appInfo.get(from[0]); 
@@ -418,21 +420,20 @@ public class MainRobcon1024 extends Activity {
 	    	//构造函数
 	        lvButtonListener( int pos) { 
 	            position = pos; 
+	            
 	        } 
 	        
 	        public void onClick( View v) { 
 	        	//TODO 未解决如何变换，只是临时的解决了！
-	            @SuppressWarnings("unused")
-				int vid= v.getId ( ) ; 
-				Drawable butid = 
-					getResources().getDrawable(R.drawable.icon3);
-				Drawable butidthis= holder. buttonLike.getDrawable();
-	            if ( butid == butidthis) {
+	        	String posiStr = Integer.toString(position);
+	            if ( !arrayLikePosition.contains(posiStr)) {
+	            	arrayLikePosition.add(posiStr);
 	            	((ImageButton)v).setImageDrawable(
 	            			v.getResources().getDrawable(R.drawable.icon3_2));
 	            	Toast.makeText(MainRobcon1024.this, 
 	            			"喜欢你" + (position + 1), Toast.LENGTH_SHORT).show();
 	            }else{
+	            	arrayLikePosition.remove(posiStr);
 	            	((ImageButton)v).setImageDrawable(
 	            			v.getResources().getDrawable(R.drawable.icon3)); ; 
 	            	Toast.makeText(MainRobcon1024.this, 
@@ -444,7 +445,6 @@ public class MainRobcon1024 extends Activity {
 		
 	} 
 	
-	//TODO
 	/**
 	 *尝试使用getIntent
 	 */
